@@ -16,7 +16,7 @@ var middleware = require('./middleware/middleware')
 app.use(middleware.requireAuthentication)
 app.get('/about-us', middleware.requestTime, function(req , res){
 
-	res.send('I am from about-us route!')
+	res.send('I am from about-us route!') //'''''''''''''''
 })
 
 app.get('/home',function(req , res){
